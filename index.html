@@ -7,7 +7,23 @@
     <title>Donut Clicker</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div class="container">
+      <h1>Donut Maker</h1>
+      <button class="makeDonutButton">Make Donut</button>
+      <p>Donuts Made : <span id="donutsMade">0</span></p>
+      <section class="autoSection">
+        <button class="purchaseAuto">Purchase Auto Clicker</button>
+        <p>Auto Clickers : <span id="numAuto">0</span></p>
+       <p>Auto Clicker Cost : <span id="autoCost">100</span></p> 
+      </section>
+      <section class="multiSection">
+        <button class="purchaseMulti">Purchase Multiplier</button>
+        <p>Multipliers Purchased : <span id="numMulti">0</span></p>
+        <p>Multiplier Cost : <span id="multiCost">10</span></p>
+        <br>
+      </section>
+      <button id="reset">Reset</button>
+    </div>
     <script src="./index.js"></script>
   </body>
 </html>
