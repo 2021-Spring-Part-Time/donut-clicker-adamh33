@@ -4,25 +4,98 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Donut Clicker</title>
   </head>
   <body>
     <div class="container">
-      <h1>Donut Maker</h1>
-      <button class="makeDonutButton">Make Donut</button>
-      <p>Donuts Made : <span id="donutsMade">0</span></p>
-      <section class="autoSection">
-        <button class="purchaseAuto">Purchase Auto Clicker</button>
-        <p>Auto Clickers : <span id="numAuto">0</span></p>
-       <p>Auto Clicker Cost : <span id="autoCost">100</span></p> 
-      </section>
-      <section class="multiSection">
-        <button class="purchaseMulti">Purchase Multiplier</button>
-        <p>Multipliers Purchased : <span id="numMulti">0</span></p>
-        <p>Multiplier Cost : <span id="multiCost">10</span></p>
-        <br>
-      </section>
-      <button id="reset">Reset</button>
+      <h1>Fred the Baker Baking Company Donut Maker</h1>
+      <div class="header">
+        <ul class="navbar">
+          <li><a href="./index.html">Home</a></li>
+          <li>
+            <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank"
+              >Inspiration</a
+            >
+          </li>
+          <li>
+            <div class="dropdown">
+              <a>Information</a>
+              <div class="dropdown-content">
+                <h2>Fred the Baker Baking Company</h2>
+                <p>
+                  Welcome to Fred the Baker Baking Company's Donut Maker Game!
+                </p>
+                <p>
+                  Have you always wished you could create fresh, hot donuts all
+                  from the comfort of your own home? well now you can! With our
+                  donut maker game, you can create as many donuts as you'd like,
+                  whenever you want!
+                </p>
+                <p>
+                  Fred the Baker Baking Company has been serving central Ohio
+                  for over 50 years, we are family-owned and oporated business
+                  baking up the best pasteries with the freshest ingredients
+                  around.
+                </p>
+                <ul>
+                  Store Hours:
+                  <li>Monday-Friday: 6:00 a.m- 8:00 pm</li>
+                  <li>Saturda-Sunday: 6:00 a.m-Noon</li>
+                  <li>Closed all Holidays</li>
+                  <p>Call us at: (555)555-5555</p>
+                  <p>Email us at:FredBaker@fredbaker.com</p>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li id="myBtn"><a>About Me</a></li>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h2>Adam Heineman</h2>
+              <p>
+                I am a web developer looking to grow my skills as a developer
+                along with my passion for quality and design to strengthen my
+                skill set in the tech industry. My previous experience working
+                in high volume, customer focused environments have helped
+                prepare me to strive under pressure and work well in both team
+                and individual situations. My passion for learning and growing
+                as a person, as well as my laid back, focused attitude allow me
+                to fit in in all situations.
+              </p>
+              <div class="socialNav">
+                <a
+                  href="https://www.linkedin.com/in/adam-heineman-8bab187a/"
+                  target="_blank"
+                  class="fa fa-linkedin"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="game">
+        <section class="donuts">
+          <div class="makeDonutButton">Make Donut</div>
+          <p>Donuts Made : <span id="donutsMade">0</span></p>
+        </section>
+        <section class="autoSection">
+          <div class="purchaseAuto">Purchase Auto Clicker</div>
+          <p>Auto Clickers : <span id="numAuto">0</span></p>
+          <p>Auto Clicker Cost : <span id="autoCost">100</span></p>
+        </section>
+        <section class="multiSection">
+          <div class="purchaseMulti">Purchase Multiplier</div>
+          <p>Multipliers Purchased : <span id="numMulti">0</span></p>
+          <p>Multiplier Cost : <span id="multiCost">10</span></p>
+        </section>
+        <div id="reset">Reset</div>
+      </div>
     </div>
     <script src="./index.js"></script>
   </body>

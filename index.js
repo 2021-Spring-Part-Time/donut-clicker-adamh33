@@ -11,6 +11,9 @@ const multiCost = document.getElementById('multiCost');
 const resetButton = document.getElementById("reset")
 const myDonutMaker = new DonutMaker(0,0,100,10,0);
 
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
 
 makeDonutButton.addEventListener("click",()=>{
   myDonutMaker.addDonut();
@@ -46,3 +49,21 @@ setInterval(function (){
   myDonutMaker.activateAuto();
   donutsMade.innerHTML = myDonutMaker.numDonuts;},1000);
 
+
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
